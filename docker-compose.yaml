@@ -1,0 +1,7 @@
+services:
+  redis_cache:
+    image: redis:alpine
+    container_name: weather_redis
+    ports:
+      - "6379:6379"
+    restart: always
